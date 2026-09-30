@@ -1,27 +1,151 @@
-\documentclass[letterpaper,11pt]{article} 
-\usepackage[empty]{fullpage} 
-\usepackage[hidelinks]{hyperref} 
-\usepackage{enumitem} 
-\setlist[itemize]{leftmargin=0.15in} 
-\begin{document} \begin{center} {\Huge \bf Kevin Dang}\\ Oceanside, CA \\ 760-277-4730 |
-	\href{mailto:kevinthedang\_1@outlook.com}{kevinthedang\_1@outlook.com} \\
-	\href{https://github.com/kevinthedang}{github.com/kevinthedang} |
-	\href{https://linkedin.com/in/kevinthedang}{linkedin.com/in/kevinthedang}
-\end{center} \section*{Experience} \textbf{Java Developer II}
-\hfill May 2024 -- Present\\ Expeditors \begin{itemize}
-	\item Built and deployed containerized Spring Boot microservices using Docker and
-	      ArgoCD, increasing deployment speed by 40\%.
-	\item Migrated legacy automation tests to a generalized framework, reducing build
-	      times by 12\%.
-	\item Developed internal web applications using Java, Spring Boot, and AngularJS. \end{itemize} \section*{Projects} \textbf{Discord Chat Bot} \begin{itemize}
-	\item Developed a self-hosted Discord chatbot leveraging Ollama for local LLM
-	      inference.
-	\item Built using TypeScript, Node.js, Discord.js, and Docker.
-\end{itemize}
-\section*{Skills}
-\textbf{Languages:} Java, Python, JavaScript, TypeScript, SQL, C\#\\
-\textbf{Frameworks:} Spring Boot, AngularJS\\
-\textbf{Tools:} Docker, Git, ArgoCD, Linux
-\section*{Education}
-\textbf{Gonzaga University}\\ B.S. Computer Science, GPA: 3.56
+%-------------------------
+% Resume in Latex
+% Author : Kevin Dang
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://kevinthedang.com/}{\Large Kevin Dang}} & Email : \href{mailto:kevinthedang\_1@outlook.com}{kevinthedang\_1@outlook.com} \\
+  \href{https://kevinthedang.com/}{kevinthedang.com} & Mobile : +1-760-277-4730 \\
+  & GitHub : \href{https://github.com/kevinthedang}{github.com/kevinthedang} \\
+  & LinkedIn : \href{https://www.linkedin.com/in/kevinthedang}{linkedin.com/in/kevinthedang} \\
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Expeditors}{Los Angeles, CA}
+      {Software Engineer II}{May 2024 - Present}
+      \resumeItemListStart
+        \resumeItem{Application Development}
+          {Engineered business web applications using Java, Spring Boot, and AngularJS to deliver highly scalable software solutions for internal enterprise processes.}
+        \resumeItem{Test Framework Automation}
+          {Migrated legacy tests to a generalized framework via Cucumber, leveraging Behavior-Driven Development to reduce pipeline build times for web applications by 12\%.}
+        \resumeItem{Containerization \& DevOps}
+          {Architected containerized microservices to decouple core system tasks, leveraging ArgoCD for automated, seamless service deployments that increased deployment velocity by 40\%.}
+        \resumeItem{Infrastructure Optimization}
+          {Executed critical Unix patching and Apache Tomcat server upgrades, systematically optimizing server performance and ensuring continuous enterprise security compliance.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Freelance Web Development}{Oceanside, CA}
+      {Frontend Developer \& Maintainer}{July 2026 - Present}
+      \resumeItemListStart
+        \resumeItem{Serena Sews (\href{https://serenasews.com}{serenasews.com})}
+          {Architected and deployed a highly responsive e-commerce portfolio utilizing the \textbf{Astro} framework to minimize initial page load times and establish strong organic SEO visibility for client discovery.}
+        \resumeItem{Serverless Integration}
+          {Configured an automated client inquiry pipeline via \textbf{EmailJS}, eliminating dedicated backend architecture overhead while securing a reliable, zero-maintenance message delivery system.}
+        \resumeItem{Infrastructure \& DevOps}
+          {Leverage \textbf{Cloudflare} to orchestrate continuous deployment pipelines, manage secure DNS domain routing, and monitor live traffic analytics to ensure maximum site availability.}
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/kevinthedang/discord-ollama}{Discord Chat Bot}}
+      {Engineered a production-ready Node.js Discord bot using TypeScript to interface with locally hosted Large Language Models via Ollama. Implemented asynchronous message token streaming, integrated multi-user thread state management, and encapsulated the entire service using Docker containers to deliver highly secure, localized AI chat environments.}
+    \resumeSubItem{\href{https://github.com/kevinthedang/pc-price-build-engine}{PC Price Build Engine}}
+      {Developed a modular data processing engine in Python designed to aggregate and normalize computer hardware pricing metrics from public endpoints. Programmatically calculated multi-variable cost optimizations and component performance benchmarks to generate dynamically optimized system configuration maps.}
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Gonzaga University}{Spokane, WA}
+      {Bachelor of Science in Computer Science;  GPA: 3.56}{Aug. 2020 -- May 2024}
+  \resumeSubHeadingListEnd
+
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Java, Python, TypeScript, SQL}
+     \hfill
+     \textbf{Frameworks}{: Spring Boot, Angular, React, Astro}
+   }
+   \item{
+     \textbf{Technologies}{: Docker, Cloudflare, ArgoCD, Apache Kafka, Cucumber}
+   }
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
 \end{document}

@@ -1,2 +1,8 @@
 *.log
 *.json
+*.out
+*.aux
+*.fls
+*.pdf
+*.synctex*
+*.fdb_*
