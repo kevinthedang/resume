@@ -42,7 +42,13 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\projectItem}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
@@ -56,7 +62,7 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -88,13 +94,13 @@
       {Expeditors}{Los Angeles, CA}
       {Software Engineer II}{May 2024 - Present}
       \resumeItemListStart
-        \resumeItem{Application Development}
+        \resumeItem
           {Engineered business web applications using Java, Spring Boot, and AngularJS to deliver highly scalable software solutions for internal enterprise processes.}
-        \resumeItem{Test Framework Automation}
+        \resumeItem
           {Migrated legacy tests to a generalized framework via Cucumber, leveraging Behavior-Driven Development to reduce pipeline build times for web applications by 12\%.}
-        \resumeItem{Containerization \& DevOps}
+        \resumeItem
           {Architected containerized microservices to decouple core system tasks, leveraging ArgoCD for automated, seamless service deployments that increased deployment velocity by 40\%.}
-        \resumeItem{Infrastructure Optimization}
+        \resumeItem
           {Executed critical Unix patching and Apache Tomcat server upgrades, systematically optimizing server performance and ensuring continuous enterprise security compliance.}
       \resumeItemListEnd
 
@@ -102,11 +108,11 @@
       {Freelance Web Development}{Oceanside, CA}
       {Frontend Developer \& Maintainer}{July 2026 - Present}
       \resumeItemListStart
-        \resumeItem{Serena Sews (\href{https://serenasews.com}{serenasews.com})}
-          {Architected and deployed a highly responsive e-commerce portfolio utilizing the \textbf{Astro} framework to minimize initial page load times and establish strong organic SEO visibility for client discovery.}
-        \resumeItem{Serverless Integration}
+        \resumeItem
+          {Architected, deployed, and currently maintain a highly responsive e-commerce business portfolio for \href{https://serenasews.com}{Serena Sews} utilizing the \textbf{Astro} framework to minimize page load times and establish strong organic SEO visibility for client discovery.}
+        \resumeItem
           {Configured an automated client inquiry pipeline via \textbf{EmailJS}, eliminating dedicated backend architecture overhead while securing a reliable, zero-maintenance message delivery system.}
-        \resumeItem{Infrastructure \& DevOps}
+        \resumeItem
           {Leverage \textbf{Cloudflare} to orchestrate continuous deployment pipelines, manage secure DNS domain routing, and monitor live traffic analytics to ensure maximum site availability.}
 
       \resumeItemListEnd
@@ -115,11 +121,11 @@
       {Expeditors}{Seattle, WA}
       {Software Developer Intern}{June 2023 - Aug 2023}
       \resumeItemListStart
-        \resumeItem{Database Auditing}
+        \resumeItem
           {Engineered an enterprise database auditing service featuring an automated daily email notification system, reducing team response times to critical data discrepancies by 63\%.}
-        \resumeItem{Legacy Migration}
+        \resumeItem
           {Modernized a high-traffic legacy utility application by building a secure frontend landing page using Java, Spring Boot, TypeScript, and AngularJS to systematically mitigate enterprise technical debt.}
-        \resumeItem{Agile Infrastructure}
+        \resumeItem
           {Partnered with cross-functional product owners within a SAFe Agile framework to implement Test-Driven Development (TDD) methodologies, accelerating software sprint delivery cycles.}
       \resumeItemListEnd
 
@@ -129,9 +135,9 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{\href{https://github.com/kevinthedang/discord-ollama}{Discord Chat Bot}}
+    \projectItem{\href{https://github.com/kevinthedang/discord-ollama}{Discord Chat Bot}}
       {Engineered a production-ready Node.js Discord bot using TypeScript to interface with locally hosted Large Language Models via Ollama. Implemented asynchronous message token streaming, integrated multi-user thread state management, and encapsulated the entire service using Docker containers to deliver highly secure, localized AI chat environments.}
-    \resumeSubItem{\href{https://github.com/kevinthedang/pc-price-build-engine}{PC Price Optimization Engine}}
+    \projectItem{\href{https://github.com/kevinthedang/pc-price-build-engine}{PC Price Optimization Engine}}
       {Engineered a modular data pipeline in Python to aggregate and normalize computer hardware pricing metrics from public endpoints. Programmatically calculated multi-variable cost optimizations and performance benchmarks to output dynamically mapped, budget-optimized system configurations.}
   \resumeSubHeadingListEnd
 
@@ -145,12 +151,11 @@
   \resumeSubHeadingListEnd
 
 
-%
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: Java, Python, TypeScript, Javascript, SQL}
+     \textbf{Languages}{: Java, Python, TypeScript, JavaScript, SQL}
      \hfill
      \textbf{Frameworks}{: Spring Boot, Angular, React, Astro}
    }
