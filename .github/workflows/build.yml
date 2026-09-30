@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'resume.tex'
 
 jobs:
   build:
